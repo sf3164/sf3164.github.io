@@ -216,9 +216,21 @@ body {
 .profile-img {
   width: 10px;
   height: 10px;
+  object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e0e7ff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;   /* adds space below image */
 }
+.hero-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero-left {
+  max-width: 680px;
+}
+
 
 
