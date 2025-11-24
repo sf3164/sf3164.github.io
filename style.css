@@ -62,8 +62,20 @@ body {
 
 .hero-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;       /* align to top */
+  justify-content: space-between; /* text left, image right */
+  gap: 2rem;
   min-height: 40vh;
+}
+
+.hero-left {
+  flex: 1.4;
+}
+
+.hero-right {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero-text h1 {
@@ -84,6 +96,32 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+/* Profile image on top right */
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e0e7ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweak: stack on small screens */
+@media (max-width: 640px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .hero-right {
+    justify-content: flex-start;
+  }
+
+  .profile-img {
+    margin-bottom: 1rem;
+  }
 }
 
 /* Buttons */
@@ -196,41 +234,5 @@ body {
   font-size: 0.85rem;
   color: #666;
 }
-.hero-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.hero-left {
-  flex: 1.2;
-}
-
-.hero-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #e0e7ff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;   /* adds space below image */
-}
-.hero-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.hero-left {
-  max-width: 680px;
-}
-
 
 
