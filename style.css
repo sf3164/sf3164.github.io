@@ -214,8 +214,8 @@ body {
 }
 
 .profile-img {
-  width: clamp(120px, 18vw, 180px);
-  height: clamp(120px, 18vw, 180px);
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #e0e7ff;
