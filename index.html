@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">MySite</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+    <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Hello, I’m <span class="accent">Your Name</span></h1>
+          <p>
+            I’m a [your role here — e.g., student / developer / researcher]
+            interested in [a few keywords about you]. This is my personal website
+            built with GitHub Pages.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View my projects</a>
+            <a href="#contact" class="btn outline">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Write a short paragraph about yourself here. For example:
+          “I enjoy working on web development, data analysis, and transportation
+          research. In my free time, I like reading, exploring new tools,
+          and learning new programming languages.”
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Project 1</h3>
+            <p>
+              Brief description of Project 1. What did you build?
+              What tools or data did you use?
+            </p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Project 2</h3>
+            <p>
+              Brief description of Project 2. You can link to GitHub
+              repositories, papers, or demos here.
+            </p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Project 3</h3>
+            <p>
+              Brief description of Project 3. Keep it short but clear
+              so visitors quickly understand what it is.
+            </p>
+            <a href="#" class="card-link">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          You can reach me at
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          or find me on:
+        </p>
+        <ul class="social-links">
+          <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+          <!-- Add more links if you want -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
